@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Documento</title>
+</head>
+<body>
+
+<script>
+
+    var peso = prompt('Cual es tu peso?')
+    var planeta = prompt('¿En que planeta deseas convertir tu peso? ¿O en la Luna?, Escribe la primera letra con Mayúscula.')
+
+
+    var g_mercurio = 3.7;
+    var g_venus = 8.87;
+    var g_tierra = 9.8;
+    var g_luna = 1.62;
+    var g_marte = 3.7;
+    var g_jupiter = 24.8;
+    var g_saturno = 10.44;
+    var g_urano = 8.87;
+    var g_neptuno = 11.15;
+    
+    var pesoMercurio = peso * g_mercurio / g_tierra
+    var pesoVenus = peso * g_venus / g_tierra
+    var pesoTierra = peso * g_tierra / g_tierra
+    var pesoLuna = peso * g_luna / g_tierra
+    var pesoMarte = peso * g_marte / g_tierra
+    var pesoJupiter = peso * g_jupiter / g_tierra
+    var pesoSaturno = peso * g_saturno / g_tierra
+    var pesoUrano = peso * g_urano / g_tierra
+    var pesoNeptuno = peso * g_neptuno / g_tierra
+    
+
+
+
+    pesoMercurio = (pesoMercurio.toFixed(1))
+    pesoVenus = (pesoVenus.toFixed(1))
+    pesoTierra = (pesoTierra.toFixed(1))
+    pesoMarte = (pesoMarte.toFixed(1))
+    pesoJupiter = (pesoJupiter.toFixed(1))
+    pesoSaturno = (pesoSaturno.toFixed(1))
+    pesoUrano = (pesoUrano.toFixed(1))
+    pesoNeptuno = (pesoNeptuno.toFixed(1))
+    pesoLuna = (pesoLuna.toFixed(1))
+    
+    
+
+
+    if (planeta == 'Mercurio')  {
+        document.write('<p style="text-align: center; color: #3C5186;">Tu peso en Mercurio es <strong>' + pesoMercurio + 'kg</strong> ' + ' </p>')
+    }
+    if (planeta == 'Venus')  {
+        document.write('<p style="text-align: center; color: #ABA79C;">Tu peso en Venus es <strong>' + pesoVenus + 'kg</strong> ' + ' </p>')
+    }
+    if (planeta == 'Tierra')  {
+        document.write('<p style="text-align: center; color: blue;">Tu peso en la Tierra es <strong>' + pesoTierra + 'kg</strong> ' + ' </p>')
+    }
+    if (planeta == 'Luna') {
+        document.write('<p style="text-align: center; color: black;"><br> Tu peso en la Luna es <strong>' + pesoLuna + 'kg</strong></p>')
+    }
+    if (planeta == 'Marte')  {
+        document.write('<p style="text-align: center; color: orange;">Tu peso en Marte es <strong>' + pesoMarte + 'kg</strong> ' + ' </p>')
+    }
+    if (planeta == 'Jupiter') {
+        document.write('<p style="text-align: center; color: #997E69;"><br> Tu peso en Jupiter es <strong>' + pesoJupiter + 'kg</strong></p>')
+    }
+    if (planeta == 'Saturno') {
+        document.write('<p style="text-align: center; color: #BFB884;"><br> Tu peso en Saturno es <strong>' + pesoSaturno + 'kg</strong></p>')
+    }
+    if (planeta == 'Urano') {
+        document.write('<p style="text-align: center; color: #90A2AC;"><br> Tu peso en Urano es <strong>' + pesoUrano + 'kg</strong></p>')
+    }
+    if (planeta == 'Neptuno') {
+        document.write('<p style="text-align: center; color: #456EFC;"><br> Tu peso en Neptuno es <strong>' + pesoNeptuno + 'kg</strong></p>')
+    }
+    if (planeta == 'Pluton') {
+        document.write('Error, Plutón ya no es un planeta de nuestro sistema solar.')
+    }
+    if (planeta == 'Plutón') {
+        document.write('Error, Plutón ya no es un planeta de nuestro sistema solar.')
+    }
+  
+
+//    pesoMarte = (peso * 3.7)/9.8
+//    pesoJupiter = (peso * 24.8)/9.8
+
+</script>
+
+
+</body>
+</html>
